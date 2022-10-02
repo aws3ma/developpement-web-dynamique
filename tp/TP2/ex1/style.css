@@ -1,0 +1,12 @@
+body{
+    background-color: blue;
+    font-family: Arial;
+    color : yellow;
+}
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+h2, h3{
+    margin-left: 50px;
+}

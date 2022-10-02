@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Remplir le formulaire</h1>
+    <form action="">
+      <label for="pseudo">Saisir votre pseudo* :</label><br />
+      <input type="text" name="" id="pseudo" /><br />
+      <label for="email">E-mail* :</label><br />
+      <input title="exemple: votre_nom@hotmail.com" type="email" name="" id="email" /><br />
+      <label for="password">mot de passe* :</label><br />
+      <input type="password" name="" id="password" /><br />
+      <label for="confirmPassword">confirmer mot de passe* :</label><br />
+      <input type="password" name="" id="confirmPassword" /><br />
+      <button type="button" onclick="affichage()">Vérifier vos informations avant de se connecter</button>
+      <button type="reset">effacer la saisie</button>
+      <button type="button" onclick="fermer()">fermer la fenetre</button>
+    </form>
+    <footer>
+        <hr />
+      Réalisé par Nous &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </footer>
+  </body>
+</html>

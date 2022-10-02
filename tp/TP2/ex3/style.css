@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background-color: #EC7063;
+}
+h1 {
+    color: #FFFFCC ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 70px;
+}
+footer {
+    color: #ffffcc;
+}
+* {
+    margin-bottom: 10px;
+}
+label {
+    color: black;
+}
+label[for=pseudo],label[for=email],label[for=password] {
+    font-weight: bold;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+button {
+    margin-top: 20px;
+}

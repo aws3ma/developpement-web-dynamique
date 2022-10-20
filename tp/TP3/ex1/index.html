@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Gestionnaire de contacts</h2>
+    </header>
+    <div id="main">
+        <nav>
+            <ul>
+                <li style="color: blue;">Accueil</li>
+                <li>/</li>
+                <li>Clients</li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h4>Ajout/modification d'un contact</h4>
+                <details>
+                    <summary>Click to show the form</summary>
+                    <div>
+                        <form action="">
+                            <fieldset>
+                                <legend>Nouveau contact</legend>
+                                <div class="row">
+                                    <label >Nom</label>
+                                    <input type="text" id="nom" maxlength="32" required>
+                                </div>
+                                <div class="row">
+                                    <label >Prénom </label>
+                                    <input type="text" id="prenom" maxlength="32" required>
+                                </div>
+                                <div class="row">
+                                    <label >Telephone</label>
+                                    <input type="tel" id="tel" placeholder="55 465 479" required>
+                                </div>
+                                <div class="row">
+                                    <label >Email</label>
+                                    <input type="email" id="email" maxlength="128">
+                                </div>
+                                <div class="row">
+                                    <label >de naissance</label>
+                                    <input type="date" id="naiss">
+                                </div>
+                                <div class="row"  id="range">
+                                    <label >Nombre d'enfants : <span id="out">0</span></label>
+                                    <span>0</span>
+                                    <input type="range" id="enfants" min="0" max="5" value="0" step="1" onchange="update()" class="slider">
+                                    <span>5</span>
+                                </div>
+                            </fieldset>
+                            <div class="row" id="buttons">
+                                <button type="submit">OK</button>
+                            </div>
+                        </form>
+                    </div>
+                </details>
+            </article>
+            <article>
+                <h4>Liste des contacts</h4>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Prénom</th>
+                            <th>Nom</th>
+                            <th>Téléphone</th>
+                            <th>Email</th>
+                            <th>Date de naissance</th>
+                            <th>Nombre enfants</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jean</td>
+                            <td>Marais</td>
+                            <td>0613243443</td>
+                            <td>jeanmarais@acteur.fr</td>
+                            <td>17/08/1945</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Johnny</td>
+                            <td>Halliday</td>
+                            <td>0656453434</td>
+                            <td>johnny.halliday@rocker.fr</td>
+                            <td>17/08/1952</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Eddy</td>
+                            <td>Mitchell</td>
+                            <td>0656453423</td>
+                            <td>eddy.mitchell@rocker.fr</td>
+                            <td>17/08/1956</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="new"><button type="button" >Nouveau client</button></div>
+            </article>
+        </section>
+    </div>
+    <footer class="footer">
+        Gestionnaire de contacts <script>document.write(new Date().getFullYear())</script>
+    </footer>
+</body>
+
+</html>

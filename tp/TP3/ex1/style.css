@@ -7,9 +7,6 @@
   text-align: center;
   padding: 20px 0px 20px 0px;
 }
-html, body{
-  height: 100%;
-}
 
 tbody tr:nth-child(odd) {
   background-color: #c4c4c4;

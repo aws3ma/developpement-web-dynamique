@@ -1,0 +1,6 @@
+img{
+    width: 50px;
+}
+label,p,img,button{
+    margin:5px
+}

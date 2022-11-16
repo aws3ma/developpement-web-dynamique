@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form name="inscription">
+        <fieldset>
+            <legend>Inscription</legend>
+            <label for="login">Login <span style="color:red">*</span></label>
+            <input type="text" id="login" onBlur="verif(this)">
+            <label for="pwd">Mot de passe <span style="color:red">*</span></label>
+            <input type="password" id="pwd" onkeypress="verifPassword()" onBlur="verif(this)">
+            <label for="nom">Nom <span style="color:red">*</span></label>
+            <input type="text" id="nom" onBlur="verif(this)">
+            <label for="prenom">Prénom <span style="color:red">*</span></label>
+            <input type="text" id="prenom" onBlur="verif(this)">
+            <label for="adresse">Adresse <span style="color:red">*</span></label>
+            <input type="text" id="adresse" onBlur="verif(this)">
+            <label for="email">Email <span style="color:red">*</span></label>
+            <input type="email" id="email" onBlur="verif(this)">
+            <label for="msg">Message <span style="color:red">*</span></label><br>
+            <textarea type="msg" id="msg" onBlur="verif(this)"></textarea>
+            <br>
+            <button type="button" onclick="Valider()">Envoyer</button>
+            <button type="reset">Annuler</button>
+            <a href="/connetion.html">Deja inscrit?</a>
+        </fieldset>
+    </form>
+</body>
+
+</html>

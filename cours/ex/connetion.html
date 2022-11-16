@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Connexion</legend>
+            <label for="cnxLogin">login</label>
+            <input type="text" id="cnxLogin" onBlur="verif(this)">
+            <label for="cnxPassword">MP</label>
+            <input type="password" id="cnxPassword" onBlur="verif(this)">
+            <br>
+            <button type="button" onclick="verifLoginMp()">Envoyer</button>
+            <button type="reset">Annuler</button>
+            <a href="/inscription.html">Créer un compte maintenant!</a>
+        </fieldset>
+    </form>
+</body>
+
+</html>
